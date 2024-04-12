@@ -14,9 +14,11 @@ type ScheduleProps = {
 };
 
 export const Schedule = ({ date }: ScheduleProps) => {
+  const readableDate = date?.toLocaleDateString("en-US");
+
   return (
     <div>
-      <h2>Date: {JSON.stringify(date)}</h2>
+      <h2>Date: {readableDate}</h2>
 
       <div className="flex gap-x-3 pt-4 items-center">
         <p>Available timeslots:</p>
