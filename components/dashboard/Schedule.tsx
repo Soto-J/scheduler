@@ -1,5 +1,12 @@
-export const Schedule = () => {
+type ScheduleProps = {
+  date: Date | undefined;
+};
+
+export const Schedule = ({ date }: ScheduleProps) => {
   return (
-    <div>Schedule</div>
-  )
-}
+    <div>
+      <h2>Schedule</h2>
+      <div>Date: {JSON.stringify(date)}</div>
+    </div>
+  );
+};

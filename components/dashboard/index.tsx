@@ -30,7 +30,7 @@ export const Dashboard = () => {
         </DialogTrigger>
 
         <DialogContent>
-          <Schedule />
+          <Schedule date={date} />
         </DialogContent>
       </Dialog>
     </div>
