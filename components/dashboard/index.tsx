@@ -25,7 +25,7 @@ export const Dashboard = () => {
       />
 
       <Dialog>
-        <DialogTrigger>
+        <DialogTrigger asChild>
           <Button>Schedule</Button>
         </DialogTrigger>
 
